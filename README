@@ -1,0 +1,35 @@
+Ajax viewer - for simply & pleasure work with ajax.
+
+It`s debuging staff to clean view how you REST service are worked
+
+Example:
+first line - REST servise:
+    http://emspost.ru/api/rest
+    
+second line - params isa hash (js notation)-
+  { "method" : "ems.calculate",
+  "from" : "city--moskva",
+  "to" : "region--omskaja-oblast",
+  "weight" : 1 }
+  
+result (expected) -
+  {
+      "rsp": {
+          "stat": "ok",
+          "price": "630",
+          "term": {
+              "min": 4,
+              "max": 6
+          }
+      }
+  }
+
+
+
+Depend:
+  jquery-1.5.min.js
+  json2.js
+  beautify.js
+  jquery.jsonp-2.1.4.min.js
+  
+All exists in ./js folder or you may get from net himself.
